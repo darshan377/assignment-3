@@ -25,29 +25,12 @@
 </head>
 <body class="font-sora ">
     <header class="bg-[#EFEBE3]">
-        <section class="max-w-screen-2xl mx-auto">
+        <section class="lg:max-w-screen-2xl lg:mx-auto">
              <!-- navbar -->
           <nav>
-            <div class="navbar">
+            <div class="navbar sm:flex sm:justify-between">
                 <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                      <li><a>Item 1</a></li>
-                      <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a>Item 3</a></li>
-                    </ul>
-                  </div>
+                 
                   <img src="c2-assets/logo-header.png" alt="">
                 </div>
                 <div class="navbar-center hidden lg:flex">
@@ -57,11 +40,13 @@
                     <li><a>contact us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end gap-6">
+                <div class="navbar-end gap-6 hidden lg:flex">
                     <!-- magnifying glass -->
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                      </svg>
+                    <div class="lg:visible">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                          </svg>
+                    </div>
                       
 
                     <!-- shopping cart -->
@@ -69,10 +54,22 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                       </svg>
                       
-                  <a class="btn border border-green-500 rounded-lg">LogIN</a>
+                  <a class="lg:btn lg:border lg:border-green-500 lg:rounded-lg">LogIN</a>
                   <a class="btn text-white bg-[#179800]">Register</a>
 
                 </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                      <li><a>product</a></li>
+                    <li><a href="">services</a></li>
+                    <li><a>contact us</a></li>
+                    </ul>
+                  </div>
               </div>
           </nav>
 
@@ -93,8 +90,13 @@
         </section>
     </header>
 
-    <main>
+    <main >
+       <section class="max-w-screen-2xl mx-auto">
+        <div>
+            <h3>Services</h3>
+        </div>
 
+       </section>
     </main>
 
     <footer>
